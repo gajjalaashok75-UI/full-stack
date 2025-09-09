@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        movies objects
+    </title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        #but {
+            background-color: green;
+            text-align: center;
+            padding: 10px;
+            padding-inline: 40%;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello Ashok 👨‍💻 </h1>
+    <button id="but">Greetings</button>
+</body>
+<script>
+    let studentOb = new Object();
+    studentOb.name = "Ashok";
+    studentOb.age = 25;
+    studentOb.hobby = "Smashing  ";
+    studentOb.showage = function () {
+        alert(" student age " + this.age);
+    }
+    studentOb.showname = function () {
+        alert("student name is " + this.name);
+    }
+    studentOb.showhobby = function () {
+        alert("student hobby is " + this.hobby);
+    }
+    studentOb.showname();
+    studentOb.showage();
+    studentOb.showhobby();
+    let facultyOb = {};
+    facultyOb.Name = "Ashok";
+    facultyOb.Age = 25;
+    facultyOb.Hobby = "Smashing  ";
+    facultyOb.showAge = function () {
+        alert("faculty age " + this.Age);
+    }
+    facultyOb.showName = function () {
+        alert("faculty name is " + this.Name);
+    }
+    facultyOb.showHobby = function () {
+        alert("faculty hobby is " + this.Hobby);
+    }
+    facultyOb.showName();
+    facultyOb.showAge();
+    facultyOb.showHobby();
+
+</script>
+
+</html>

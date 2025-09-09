@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ashok</title>
+        <script>
+            
+        </script>
+        <style>
+            body{
+                background-color: aqua;
+                border-radius: 111px;
+            }
+            div{
+                padding-left: 20%;
+                padding-right: 20%;
+                
+            }
+            form{
+                background-color: rgb(56, 218, 156);
+                padding :15%;
+                padding-left: 10%;
+                height: 200px;
+                border: 2px solid black;
+                border-radius: 111px;
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+            h{
+                text-align: center;
+                padding: 30%;
+                font-size: 132%;
+                color: rgb(29, 14, 231);
+            }
+            #name{
+                padding: 1.9%;
+                padding-inline: 16%;
+                text-align: left;
+                transition: transform 0.4s ease;
+            }
+            #name:hover{
+                transform: scale(109%);
+            }
+            #num{
+                padding: 1.9%;
+                padding-inline: 16%;
+                transition: transform 0.4s ease;
+            }
+            #num:hover{
+                transform: scale(109%);
+            }
+            .sub{
+                padding: 1.9%;
+                background-color: brown;
+                color : white;
+                text-align: center;
+                padding-inline: 8%;
+                transition: transform 0.4s ease;
+                border-radius: 111px;
+                
+            }
+            .sub:hover{
+                transform: scale(130%);
+            }
+            .su{
+                border: 2px solid rgb(0, 0, 0);
+                text-align: center;
+                border-radius: 111px;
+                background-color:  rgb(56, 218, 156);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form id="for" >
+                <h><b>Student Details</b></h><br><br><br>
+                <input type="text" id="name" placeholder="Enter Name" name = "name" required><br><br><br>
+                <input type="number" id="num" name = "age" placeholder="Enter Age" required><br><br><br>
+                <Button type="submit" id="subm" class="sub" onclick="submi()" >Submit</Button>
+            </form>
+            <br>
+            <div  class="su" id="list">
+            </div>
+            <button   class="sub" onclick="clearAll()">Clear all</button><br>
+        </div>
+    </body>
+    <script>
+        let name= document.querySelector("#name");
+        let age= document.querySelector("#num");
+        let students = [];
+        
+        function submi() {
+            event.preventDefault();
+            let student = {
+            name: name.value  , age: age.value
+        }
+            students.push(student);
+            alert(`items pushed into array  name is  ${name.value} and age is  ${age.value}` );
+            displaystudents();
+        }
+        function clearAll() {
+            students.splice(0,students.length);
+            displaystudents();
+        }
+function displaystudents() {
+            let i;
+            let sthtml = "";
+            console.log(students);
+            for(i=0;i<students.length;i++){
+                sthtml= sthtml+ `<div>Name: ${students[i].name} , age: ${students[i].age}<button  class="sub" onclick="deleteStudent(${i},${students[i].name})" > Delete ${students[i].name} </button> </div> `;
+            }
+            document.querySelector("#list").innerHTML = sthtml;
+}
+function deleteStudent(i , name) {
+    alert("Delete Student" + name);
+    student.splice(i,1);
+    displaystudents();
+}
+    </script>
+</html>

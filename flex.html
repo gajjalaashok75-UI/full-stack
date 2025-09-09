@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex</title>
+        <style>
+            div{
+                border: 2px solid;
+                padding: 10px;
+                background-color: black;
+                
+            }
+            #fle{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            #one{
+                background-color: aqua;
+                flex-grow: 1;
+                text-align: center;
+                padding: 2%;border-radius: 999px;
+                
+            }
+            #one:hover{
+                border-radius: 999px;
+                transform: scale(1.09);
+            }
+            #two{
+                background-color: rgb(62, 199, 44);
+                flex-grow: 1;
+                padding: 2%;border-radius: 999px;
+                text-align: center;
+            }
+            #two:hover{
+                border-radius: 999px;
+                transform: scale(1.09);
+            }
+            #three{
+                flex-grow: 1;
+                padding: 2%;border-radius: 999px;
+                text-align: center;
+                background-color: rgb(168, 28, 105);
+            }
+            #three:hover{
+                border-radius: 999px;
+                transform: scale(1.09);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fle">
+        <div id="one"><b>Div One</b></div>
+        <br><br>
+        <div id="two"><b>Div Two</b></div>
+        <br><br>
+        <div id="three"><b>Div Three</b></div>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+        <title>
+            it's me 
+        </title>
+        <style>
+            body{
+                padding: 5%;
+                text-align: center;
+                background-color: aqua;
+            }
+            form{
+                background-color: rgb(87, 131, 212);
+                padding: 10%;
+                
+                border: 3px solid;
+            }
+            h{
+                
+                padding: 1%;
+            }
+            #box1{
+                background-color: rgb(25, 224, 158);
+                border: 5px solid;
+                float: left;
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 2%;
+            }
+            
+            video{
+                width: 40%;
+                border: 5px solid;
+                float: right;
+                height: 10%;
+                padding: 5px;
+            }
+            #vi{
+                border: 2px solid;
+            }
+            button{
+                background-color: blueviolet;
+                padding: 10px;
+                border-radius: 555px 333px; 
+            }
+            button:hover {
+                background-color: darkviolet;
+                cursor: pointer;
+                transform: scale(1.09);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"><b>Do You Want To Find Me !!!
+        <div id="box">
+            <form>
+                <h><b>Enter Name : </b></h>
+                <input type="text" placeholder="Full Name" required >
+                <br><br>
+                <h><b>Enter Age : </b></h>
+                <input type="number" placeholder="Age" min="18" max="50" required><br><br>
+                <h><b>Enter Email : </b></h>
+                <input type="email" placeholder="example@gmail.com" required ><br><br>
+                <h><b>Date Of Birth : </b></h>
+                <input type="date" required><br><br>
+                <h><b>Select Color : </b></h>
+                <input type="color" > <br><br>
+                <h><b>Enter week : </b></h>
+                <input type="week" > <br><br>
+                <h><b>Enter Time : </b></h>
+                <input type="time" > <br><br>
+                <h><b>Enter URL : </b></h>
+                <input type="url" placeholder="https://www.yoursite.com"> <br><br>
+                <h><b>Enter Mobile No : </b></h>
+                <input type="tel" placeholder="1234567890" > <br><br>
+                <h><b>Enter Password : </b></h>
+                <input type="password" placeholder="------" required><br><br>
+                <h><b>Conform Password : </b></h>
+                <input type="password" placeholder="------" required><br><br>
+                <h><b>Satisfaction With This</b></h>
+                <input type="range" name="ashok" min=0 max=100 oninput="display.value = ashok.value">
+                <output name="display" for="ashok"></output>
+                <br><br>
+                <button type="submit"><b>Submit</b></button>
+                <button type="reset" ><b>Reset</b></button>
+            </form>
+        </div>
+    </b></div>
+    <div id="vi">
+        <video controls poster="images.jpg">
+            <source src="2480792-hd_1920_1080_24fps.mp4" type="video/mp4" >
+        </video>
+        <button type="button" onclick="playvideo()">Play Video</button>
+    <button type="button" onclick="pausevideo()">Pause Video</button>
+    </div>
+    
+    <script>
+        let videotag= document.querySelector("video");
+        function playvideo() {
+            videotag.play();
+        }
+        function pausevideo() {
+            videotag.pause();
+        }
+        
+    </script>
+    </body>
+    
+</html>

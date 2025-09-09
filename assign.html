@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=devise-width, initial-scale='1' ">
+        <link rel="icon" href="favicon.jpg" sizes="32*32" type="image/jpg">
+        <title>assign</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        (
+            function() {
+                alert("u go to the invoke now........... ");
+            }
+        ) ();
+        function invokeSum(a,b) {
+            return a() + b();
+        }
+        function returnOne() {
+            return 5;
+        }
+        function returnTwo() {
+            return 5;
+        }
+        alert(invokeSum(returnOne,returnTwo))
+    </script>
+</html>

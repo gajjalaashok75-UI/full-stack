@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> layout</title>
+        <style>
+            div{
+                border: 1px solid;
+                padding: 5px;
+                background-color: black;
+                
+            }
+            #fle{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            #one{
+                background-color: aqua;
+                flex-grow: 1;
+                text-align: center;
+                padding: 2%;border-radius: 999px;
+                
+            }
+            #one:hover{
+                border-radius: 999px;
+                transform: scale(1.09);
+            }
+            #two{
+                background-color: rgb(62, 199, 44);
+                flex-grow: 1;
+                padding: 2%;border-radius: 999px;
+                text-align: center;
+            }
+            #two:hover{
+                border-radius: 999px;
+                transform: scale(1.09);
+            }
+            #three{
+                flex-grow: 1;
+                padding: 2%;border-radius: 999px;
+                text-align: center;
+                background-color: rgb(168, 28, 105);
+            }
+            #three:hover{
+                border-radius: 999px;
+                transform: scale(1.09);
+            }
+            img{
+                border-radius: 111px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="fle">
+            <div id="one"><b>  <img src="images1.jpg">  </b></div>
+            <br><br>
+            <div id="two"><b><img src="images2.jpg"></b></div>
+            <br><br>
+            <div id="three"><b><img src="images3.jpg"></b></div>
+            </div>
+            <div id="fle">
+                <div id="one"><b><img src="images4.jpg"></b></div>
+                <br><br>
+                <div id="two"><b><img src="images5.jpg"></b></div>
+                <br><br>
+                <div id="three"><b><img src="images6.jpg"></b></div>
+                </div>
+                <div id="fle">
+                    <div id="one"><b><img src="images7.jpg"></b></div>
+                    <br><br>
+                    <div id="two"><b><img src="images8.jpg"></b></div>
+                    <br><br>
+                    <div id="three"><b><img src="images9.jpg"></b></div>
+                    </div>
+    </body>
+</html>

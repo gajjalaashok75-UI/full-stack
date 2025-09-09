@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            hello
+        </title>
+        <style>
+            div,a,p,span{
+                border: 2px solid black;
+                padding :10px;
+            }
+            span{
+                display: block;
+            }
+            button{
+                background-color: brown;
+                padding: 10px;
+                padding-inline: 10%;
+                border-radius: 999px;
+            }
+            button:hover{
+                background-color: rgb(161, 120, 199);
+                
+            }
+            button:active{
+                background-color: rgb(143, 191, 236);
+                
+            }
+            td{
+                border: 2px solid black;
+            }
+            .as{
+                background-color: blueviolet;
+            }
+            .ash{
+                background-color: rgb(76, 170, 224);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a">
+            <div>div one</div><br>
+            <div>div two</div>
+        </div>
+        <br>
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <br>
+        <p>para1</p>
+        <br>
+        <span>span1</span><br>
+        <span>span2</span><br>
+        <button onclick="hide()"><b>Hide</b></button>
+        <button onclick="show()"><b>Show</b></button><br>
+        <br>
+        <div id="tabl">
+            <table>
+                <tr class="as">
+                    <td>S No:</td>
+                    <td>Name:</td>
+                    <td>Roll No:</td>
+                    <td>Present:</td>
+                </tr>
+                <tr class="ash">
+                    <td>01</td>
+                    <td>Ashok</td>
+                    <td>3242</td>
+                    <td>Yes</td>
+                </tr>
+                <tr class="as" >
+                    <td>02</td>
+                    <td>Vijay</td>
+                    <td>3243</td>
+                    <td>No</td>
+                </tr >
+                <tr class="ash">
+                    <td>03</td>
+                    <td>Stanley</td>
+                    <td>3244</td>
+                    <td>Yes</td>
+                </tr >
+                <tr class="as">
+                    <td>04</td>
+                    <td>Harsha</td>
+                    <td>3254</td>
+                    <td>No</td>
+                </tr>
+                <tr class="ash">
+                    <td>05</td>
+                    <td>Afnan</td>
+                    <td>32B1</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script>
+        let para = document.querySelector("p");
+        function hide() {
+            para.style.display = "none";
+        }
+        function show() {
+            para.style.display = "block";
+        }
+    </script>
+</html>
